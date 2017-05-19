@@ -6,6 +6,8 @@
 # my stuff
 logfile.log
 target/*
+screenshots/*
+src/test/*.iml
 .idea/*
 
 # User-specific stuff:

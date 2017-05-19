@@ -26,9 +26,7 @@ public class Leads_Page extends BaseClass {
 
     public static WebElement lnk_AddedLead() throws Exception {
         try {
-            element = driver.findElement(By.xpath(".//a[contains(text(), '"
-                    + Constant.Col_FirstName + " "
-                    + Constant.Col_FirstName + "')]"));
+            element = driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div/ul/li[2]/div/div[1]/div/div[1]/a[1]"));
 
             Log.info("AddedLead link is found on the Leads Page");
         } catch (Exception e) {

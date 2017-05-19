@@ -9,7 +9,7 @@ import utility.Constant;
 import utility.Log;
 
 public class ChangeNewStatusName_Action {
-    public static void Execute() throws Exception {
+    public static void Execute(String sChangedStatus) throws Exception {
 
         Home_Page.lnk_DropdownSettings().click();
         Log.info("Settings Dropdown link is clicked");
@@ -26,7 +26,7 @@ public class ChangeNewStatusName_Action {
         LeadStatuses_Page.btn_Edit().click();
         Log.info("Edit button near New status is clicked");
 
-        String sChangedStatus = Constant.NewStatus;
+        LeadStatuses_Page.txtbx_Name().clear();
         LeadStatuses_Page.txtbx_Name().sendKeys(sChangedStatus);
         Log.info(sChangedStatus + "status text is entered into the textbox");
 

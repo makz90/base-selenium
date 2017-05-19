@@ -15,7 +15,7 @@ public class Settings_Page extends BaseClass {
     public static WebElement btn_Leads() throws Exception {
         element = null;
         try {
-            element = driver.findElement(By.xpath(".//*[@id='wpsc_shopping_cart_container']/form/div[4]/div/div/span/input"));
+            element = driver.findElement(By.xpath("//*[@id=\"sidebar\"]/ul/li[14]/a"));
             Log.info("Leads button on Settings page is found.");
         } catch (Exception e) {
             Log.error("Leads button on Settings page is not found");

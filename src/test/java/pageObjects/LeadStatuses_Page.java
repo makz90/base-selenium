@@ -15,7 +15,7 @@ public class LeadStatuses_Page extends BaseClass {
     public static WebElement btn_Edit() throws Exception {
         element = null;
         try {
-            element = driver.findElement(By.xpath(".//*[@id='lead-status']//label[h4[contains(text(), 'New')]]/following//button[contains(text(), 'Edit')]"));
+            element = driver.findElement(By.xpath("//*[@id=\"lead-status\"]/div[1]/span[1]/div/div/div/div/span[1]/button"));
             Log.info("Edit (New) button on Lead Statuses page is found.");
         } catch (Exception e) {
             Log.error("Edit (New) button on Lead Statuses page is not found");
@@ -27,7 +27,7 @@ public class LeadStatuses_Page extends BaseClass {
     public static WebElement txtbx_Name() throws Exception {
         element = null;
         try {
-            element = driver.findElement(By.id("name"));
+            element = driver.findElement(By.xpath("//*[@id=\"lead-status\"]//fieldset/div[2]/div/input[@id=\"name\"]"));
             Log.info("Name textbox on Lead Statuses page is found.");
         } catch (Exception e) {
             Log.error("Name textbox on Lead Statuses page is not found");

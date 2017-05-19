@@ -35,7 +35,7 @@ public class LogIn_Page extends BaseClass {
 
     public static WebElement btn_LogIn() throws Exception {
         try {
-            element = driver.findElement(By.xpath(".//*[@id='user_new'']/fieldset//div/button"));
+            element = driver.findElement(By.xpath("//*[@id=\"user_new\"]/fieldset//div/button"));
             Log.info("LogIn button is found on the Login page");
         } catch (Exception e) {
             Log.error("LogIn button is not found on the Login Page");

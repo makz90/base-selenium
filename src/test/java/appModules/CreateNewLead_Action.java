@@ -21,15 +21,11 @@ public class CreateNewLead_Action {
 
         String sFirstName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_FirstName);
         NewLead_Page.txtbx_FirstName().sendKeys(sFirstName);
-        Log.info(sFirstName + " text is entered into first name textbox");
+        Log.info("FirstName text is entered into first name textbox");
 
         String sLastName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_LastName);
         NewLead_Page.txtbx_LastName().sendKeys(sLastName);
-        Log.info(sLastName + " text is entered into first name textbox");
-
-        String sMobile = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Phone);
-        NewLead_Page.txtbx_Mobile().sendKeys(sMobile);
-        Log.info(sMobile + " text is entered into first name textbox");
+        Log.info("LastName text is entered into last name textbox");
 
         NewLead_Page.btn_Save().click();
         Log.info("Click action is performed on Save button");

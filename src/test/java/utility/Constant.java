@@ -14,7 +14,6 @@ public class Constant {
     public static final int Col_Browser = 3;
     public static final int Col_FirstName = 4;
     public static final int Col_LastName = 5;
-    public static final int Col_Phone = 6;
-    public static final int Col_Result = 7;
+    public static final int Col_Result = 6;
     public static final String Path_ScreenShot = System.getProperty("user.dir") + "\\screenshots\\";
 }

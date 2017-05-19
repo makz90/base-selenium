@@ -1,5 +1,8 @@
 package appModules;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import pageObjects.Home_Page;
 import pageObjects.LeadDetails_Page;
@@ -10,12 +13,14 @@ import utility.Log;
 import static org.junit.Assert.assertEquals;
 
 public class VerifyLeadStatusIsChanged_Action {
-    public static void Execute() throws Exception {
+    public static void Execute(WebDriver driver) throws Exception {
 
         Home_Page.lnk_Leads().click();
         Log.info("Leads link is clicked on main navbar");
 
-        Leads_Page.lnk_AddedLead().click();
+        WebElement theLead = Leads_Page.lnk_AddedLead();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(theLead).click().perform();
         Log.info("Previously created lead name is clicked on Leads page");
 
         String sChangedLeadStatus = LeadDetails_Page.txt_Status().getText();
