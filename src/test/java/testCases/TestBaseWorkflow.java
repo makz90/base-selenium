@@ -81,7 +81,7 @@ public class TestBaseWorkflow {
             Log.error("After Method: " + e.getMessage());
         }
 
-        driver.close();
+        driver.quit();
     }
 
     private void cleanUpLeads(){
