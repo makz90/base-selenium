@@ -1,6 +1,6 @@
 # base-selenium
 <br>
-<h2>Prerequisite:</h2>
+<h2>Prerequisites:</h2>
 
 MVN installed<br>
 ChromeDriver installed<br>
