@@ -3,7 +3,7 @@
 <h2>Prerequisite:</h2>
 
 MVN installed<br>
-ChromeDriver installed
+ChromeDriver installed<br>
 <br>
 
 <h2>Usage:</h2>
