@@ -1,18 +1,18 @@
 # base-selenium
-<strong>Prerequisite:</strong>
+<h2>Prerequisite:</h2>
 
 MVN installed <br>
 ChromeDriver installed
 <br>
 
-<strong>Usage:</strong>
+<h2>Usage:</h2>
 
 git clone https://github.com/makz90/base-selenium <br>
 cd base-selenium <br>
 mvn package <br>
 <br>
 
-<strong>Results:</strong>
+<h2>Results:</h2>
 
 /logfile.log<br>
 /screenshots/<br>
