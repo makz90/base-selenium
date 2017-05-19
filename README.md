@@ -2,6 +2,6 @@
 
 Usage:
 
-git clone https://github.com/makz90/base-selenium
-git cd base-selenium
-mvn package
+git clone https://github.com/makz90/base-selenium <br>
+cd base-selenium <br>
+mvn package <br>
